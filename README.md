@@ -80,24 +80,29 @@ The application will start on `http://localhost:8082`
 
 ## Testing with HTML Interface
 
-The project includes a `test.html` file for easy API testing without external tools like Postman.
+The project includes an HTML testing interface for easy API testing without external tools like Postman.
 
-### How to Use the HTML Testing Interface:
+### Live Testing Interface:
 
-1. **Start the Spring Boot application** (must be running on port 8082)
-2. **Open `test.html`** in any web browser
-3. **Navigate through sections**:
-   - Each section represents one API module (Library, Students, Menu, Products, Tasks, Users)
-   - Click any button to test specific endpoints
-   - Results appear in the output panel below in JSON format
+**Access the testing page here**: [https://shemaplacide.github.io/Springboot_Assignment/](https://shemaplacide.github.io/Springboot_Assignment/)
 
-### Features of the HTML Interface:
-- **Organized by Module**: Each API is grouped in its own section
+### How to Use:
+
+1. **Visit the testing page** using the link above
+2. **Start the Spring Boot application locally** (must be running on port 8082):
+   ```bash
+   ./mvnw spring-boot:run
+   ```
+3. **Click any button** on the testing page to test endpoints
+4. **View results** in the output panel below in JSON format
+
+### Features:
+- **Organized by Module**: Each API is grouped in its own section (Library, Students, Menu, Products, Tasks, Users)
 - **One-Click Testing**: No need to write URLs manually
 - **Real-time Results**: See API responses instantly
-- **Error Handling**: Shows connection errors if server is not running
+- **Error Handling**: Shows clear messages if server is not running
 
-### Example Tests Available:
+### Available Tests:
 - Get all items from any module
 - Get specific items by ID
 - Filter by categories, status, or other criteria
